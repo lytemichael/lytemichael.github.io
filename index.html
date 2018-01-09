@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Urlaub in Zypern </title>
+  <meta name="description" content="Mach' jetzt einen schönen Urlaub in Zypern">
+  <link href="bildschirm.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="kopfbereich">
+
+<h1> 
+<a href="https://de.wikipedia.org/wiki/Zypern" rel="external" title="de.wikipedia.org/wiki/Zypern" target="_blank">                            <img src="Zypern-Mappe.jpeg" id="logo" alt="Zypern-Mappe"></a>
+<p id="slogan1"> Urlaub in <span>Zypern</span></p>
+<p id="slogan2"> MACH' JETZT EINEN SCHÖNEN <br> <span> URLAUB </span> IN <span> ZYPERN </span> </p>         
+</h1>
+
+</div> <!-- Ende kopfbereich -->
+
+<div id="navibereich">
+
+<ul>                            
+  <li class="sie-sind-hier"><a href="index.html">STARTSEITE</a></li>
+  <li class="sie-sind-hier"><a href="Städte.html">STÄDTE</a></li>
+  <li class="sie-sind-hier"><a href="Galerie.html">GALERIE</a></li>  
+  <li class="sie-sind-hier"><a href="Kontakt.html">KONTAKT</a></li>        
+</ul>
+</div> <!-- Ende navibereich -->
+                                    
+<div id="textbereich">                
+
+<div class="slideshow-container">
+                                                        
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Bild-Zypern-13.jpg" style="width:100%">
+  <div class="text">Die schöne Natur</div>                                  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Bild-Zypern-16.jpg" style="width:100%">
+  <div class="text">Das schönes Mittelmeer</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Bild-Zypern-17.jpg" style="width:100%">
+  <div class="text">Die Mappe von Zypern</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>            
+<br>     
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<a href="https://de.wikipedia.org/wiki/Zypern" rel="external" title="de.wikipedia.org/wiki/Zypern" target="_blank">                            <img src="Bild-Zypern-3.jpg" id="bild3" alt="Ein Hafenviertel in Zypern" width="350" height="70"></a>
+
+<a href="https://de.wikipedia.org/wiki/Zypern" rel="external" title="de.wikipedia.org/wiki/Zypern" target="_blank">
+<img src="Bild-Zypern-5.jpg" id="bild5" alt="Ein altes Schloss in Zypern" width="350" height="70"></a>
+
+<a href="https://de.wikipedia.org/wiki/Zypern" rel="external" title="de.wikipedia.org/wiki/Zypern" target="_blank">                            <img src="Bild-Zypern-14.jpg" id="bild14" alt="Ein Hafenviertel in Zypern" width="350" height="70"></a>
+
+<div class="text1">
+<h2> KURZE INFORMATION ZU ZYPERN </h2>    
+                                       
+<p> Sie können jetzt einen Urlaub in dem schönen Land <strong> Zypern </strong> machen. Zypern ist eine schöne <strong> Insel, </strong> die im östlichen Mittelmeer liegt.
+Sie ist die <strong> drittgrößte Mittelmeerinsel </strong> nach Sizilien und Sardinien.
+Zypern gehört geographisch zu <strong> Asien, </strong> wird politisch und kulturell jedoch meist zu <strong> Europa </strong> gezählt.     Auf 9251 km² leben 1,12 Millionen Menschen.         
+Der Süden wird von der Republik Zypern beherrscht.      
+Der Nordteil steht jedoch unter Kontrolle der türkischen Republik Nordzypern,die nur von der Türkei anerkannt wird.
+In Zypern kann man sich an vielen <em> Aktivitäten </em> teilnehmen.
+Man kann entweder die <em> Innenstädte besuchen,</em> <em> Sport </em> oder <em> Abenteuer machen. </em>
+<strong> Sie können die Geographische Lage der Städte in der Mappe von Zypern rechts sehen. </strong></p>
+<p> Es gibt viele Sehenswürdigkeiten in Zypern. Zum Beispiel: 
+<br>
+<ol class="liste">
+  <li> Die Mittelalterische Gebäude </li>         
+  <li> Die Innenstadt </li>                                                                                                                   
+  <li> Die kleine Straßenmärkte </li>
+  <li> Die schöne Statuen </li>
+  <li> Die schöne Natur (Wasser und Wald) </li>
+  <li> Der Geburtsort von der Göttin der Liebe <em> Aphrodite. </em></li>         
+  </ol>
+</p>
+</div>
+
+</div> <!-- Ende textbereich -->    
+
+<div id="fussbereich">
+
+<address>
+Diese ist eine Präsentation zur Zypern
+<br>                                    
+Die Insel im östlichen Mittelmeer. 
+</address>
+
+</div> <!-- Ende fussbereich -->
+
+<script> 
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {                
+  showSlides(slideIndex += n);         
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+ 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</div> <!-- Ende wrapper -->
+
+</body>
+</html>
