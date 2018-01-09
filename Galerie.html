@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Urlaub in Zypern </title>
+  <meta name="description" content="Mach' jetzt einen schönen Urluab in Zypern">
+  <link href="bildschirm.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper">                 
+
+<div id="kopfbereich">
+
+<h1> 
+<a href="https://de.wikipedia.org/wiki/Zypern" rel="external" title="de.wikipedia.org/wiki/Zypern" target="_blank">                            <img src="Zypern-Mappe.jpeg" id="logo"  alt="Zypern-Flagge"> </a>
+<p id="slogan1"> Urlaub in <span>Zypern</span></p>   
+<p id="slogan2"> MACH' JETZT EINEN SCHÖNEN <br> <span> URLAUB </span> IN <span> ZYPERN </span> </p>                         
+</h1>
+               
+</div> <!-- Ende kopfbereich -->
+
+<div id="navibereich">
+<ul>
+  <li class="sie-sind-hier"><a href="index.html">STARTSEITE</a></li>    
+  <li class="sie-sind-hier"><a href="Staedte.html">STÄDTE</a></li>
+  <li class="sie-sind-hier"><a href="Galerie.html">GALERIE</a></li>
+  <li class="sie-sind-hier"><a href="Kontakt.html">KONTAKT</a></li>                  
+</ul>
+</div> <!-- Ende navibereich --> 
+       
+<div id="textbereich">            
+                                   
+<h2 id="text5"> EINE BILDGALERIE VON DEN DREI BELIEBTESTEN STÄDTEN IN ZYPERN </h2>
+
+<p id="text3"> Jedes Jahr werden diese drei Städte von tausenden Besuchern besucht.
+<br> Unten können Sie die Bilder von den drei berühmtesten Städten in Zypern sehen. 
+</p>    
+
+<p id="text4"> Diese Bilder sind aktuell. <br> Die Bildgalerie enthält Bilder von Hotels,Herbergen,Resorts,Ufer und Stätte in Zypern
+</p>
+                                
+ <div class="row">
+  <div class="column">
+    <img src="Bild-Zypern-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-6.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-8.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-9.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-10.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-12.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Bild-Zypern-15.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+ </div>
+
+ <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="Bild-Zypern-1.jpg" style="width:100%">
+    </div> 
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="Bild-Zypern-4.jpg" style="width:100%">
+    </div>          
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="Bild-Zypern-6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="Bild-Zypern-8.jpg" style="width:100%">
+    </div>
+     
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>        
+      <img src="Bild-Zypern-9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="Bild-Zypern-10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="Bild-Zypern-12.jpg" style="width:100%">
+    </div> 
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="Bild-Zypern-15.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                               
+    <div class="caption-container">         
+     <p id="caption"></p>
+    </div>
+
+    <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Die Weltkarte von Zypern">
+    </div>        
+   <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ein Resort in Lanarka">
+    </div>
+   <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-6.jpg" style="width:100%" onclick="currentSlide(2)" alt="Eine historische Stätte in Paphos">
+    </div>
+   <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-8.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ein 5-Sterne Hotel in Paphos">
+    </div>
+   <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-9.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ein 5-Sterne Hotel in Ayia Napa">
+    </div>
+    <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-10.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ein 5-Sterne Hotel in Lanarka">
+    </div>
+    <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-12.jpg" style="width:100%" onclick="currentSlide(1)" alt="Das blaues Mittelmeer in Zypern">
+    </div>
+    <div class="column">
+     <img class="demo cursor" src="Bild-Zypern-15.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ein Ufer in Ayia Napa">
+    </div>
+
+   </div>
+   </div>
+
+   <p id="info1"> Besuchen Sie <a href="https://de.wikipedia.org/wiki/Zypern" rel="external" tittle="Zypern" target="_blank">                 Die Wikipedia Seite von Zypern</a> für weitere Informationen.</p>
+
+</div> <!-- Ende textbereich -->
+
+<div id="fussbereich">
+
+<address>
+Durch diese Bildgalerie, können Sie einen Überblick von Zypern (insbesonders die 3 Städte) bekommen.
+<br>
+Sie können sich entscheiden, welche Stadt Sie gern besuchen möchten.
+</address>
+
+</div> <!-- Ende fussbereich -->
+           
+<script>           
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+             
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+  showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+                 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");       
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>        
+
+</div> <!-- Ende wrapper -->
+
+</body>
+</html>
